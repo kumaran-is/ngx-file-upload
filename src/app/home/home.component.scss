@@ -6,11 +6,9 @@
 }
 
 .upload-btn-area {
-  position: relative;
+  flex: 1;
   max-width: 100%;
   padding: 20px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
   text-align: center;
 }
 
