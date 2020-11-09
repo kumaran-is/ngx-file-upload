@@ -1,14 +1,14 @@
-# Covid Tracker
+# File Upload
 
-Covid Tracker is a web application built using [Angular v10.2.0](https://github.com/angular) to track `COVID-19` cases around the world.
+File Upload is a web application built using [Angular v10.2.0](https://github.com/angular) to Upload files to AWS S3 bucket using S3 pre-signed URLs, AWS Lambda and AWS API Gateway
 
-This application consumes API <https://corona.lmao.ninja/v2/countries> from [covid-19 global stats](https://corona.lmao.ninja/) and hosted on AWS S3 uses CloudFront, Certificate Manager and Route 53.
+This application is hosted on AWS S3 uses CloudFront, Certificate Manager and Route 53.
 
 There are 2 ways you can launch the application :
 
-1. Application is hosted on `Github Pages`, you can launch the application on your browser directly, by [clicking here](https://kumaran-is.github.io/covid-tracker).
+1. Application is hosted on `Github Pages`, you can launch the application on your browser directly, by [clicking here](https://kumaran-is.github.io/ngx-file-upload).
 
-2. Launch the application on [StackBlitz](https://stackblitz.com/), by [clicking here](https://stackblitz.com/github/kumaran-is/covid-tracker). [StackBlitz](https://stackblitz.com/) is a online code editor built on top of vscode editor, where you can edit and see your changes on the fly.
+2. Launch the application on [StackBlitz](https://stackblitz.com/), by [clicking here](https://stackblitz.com/github/kumaran-is/ngx-file-upload). [StackBlitz](https://stackblitz.com/) is a online code editor built on top of vscode editor, where you can edit and see your changes on the fly.
 
 **Table of contents:**
 
@@ -53,18 +53,18 @@ Library | Version | Notes
 :-------|:--------:|-------
 [Node](https://nodejs.org/) | 12.13.x | Recommended NodeJS version
 [NPM](https://nodejs.org/) | 6.12.x | Recommended NPM version
-[Angular](https://angularjs.org/) | 10.x.x. | JavaScript-based open-source front-end SPA framework
+[Angular](https://angularjs.org/) | 10.2.x. | JavaScript-based open-source front-end SPA framework
+[Angular Material](https://material.angular.io/) | 10.2.x. | JavaScript-based open-source front-end SPA framework
 [Python](https://www.python.org/)| ~3.9.x | programming language
 [awscli](https://aws.amazon.com/cli/)| ~2.x.x | AWS Command Line Interface
-
 
 ## Quick Start
 
 1. Clone repository and enter it
 
   ```bash
-  git clone https://github.com/kumaran-is/covid-tracker.git
-  cd covid-tracker
+  git clone https://github.com/kumaran-is/ngx-file-upload.git
+  cd ngx-file-upload
   ```
 
 2. Install NPM and Bower dependencies
