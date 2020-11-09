@@ -1,8 +1,8 @@
 <div class="file-upload-container">
   <div class="file-drop-area">
-    <button [disabled]="disabled" mat-raised-button color="secondary" (keydown)="handleKeyDown($event)">Choose a File</button>
-    <div class="file-msg">or drag and drop a file here</div>
-    <input required name="fileUpload" type="file" (change)="doFilePicked($event.target.files)">
+
+    <span class="file-msg" >{{fileToUpload ? fileToUpload.name : 'or drag and drop file here' }}</span>
+    <input type="file" class="file-input" >
   </div>
   <div class="file-preview">
     <img [src]="imageSrc" *ngIf="imageSrc" style="height: 300px; width:500px">

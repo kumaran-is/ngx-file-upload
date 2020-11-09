@@ -1,13 +1,17 @@
 .container {
   min-height: 50vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.upload-btn-area {
-  flex: 1;
-  max-width: 100%;
+.upload-file-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.upload-btn-container{
   padding: 20px;
   text-align: center;
 }
