@@ -11,7 +11,8 @@ export class FileUploadComponent implements OnInit {
   public fileToUpload: File | null = null;
   public fileSize: string | number;
   public maxFileSize = 10;
-  public disabled =false;
+  public disabled = false;
+  public imageSrc: string;
   @ViewChild('fileInput', { static: false }) fileInput: ElementRef;
   constructor() { }
 
