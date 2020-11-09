@@ -28,18 +28,6 @@ export class FileUploadComponent implements OnInit {
     };
   }
 
-  handleKeyDown(event) {
-    // Check to see if space or enter were pressed
-    switch (event.key) {
-      case ' ':
-      case 'Spacebar': // 'Spacebar' for IE11 support
-      case 'Enter':
-        // Prevent the default action to stop scrolling when space is pressed
-        event.preventDefault();
-        this.fileInput.nativeElement.click();
-    }
-  }
-
 
   private calcFilesize(bytes, roundTo = 2) {
     const fileSize = bytes / (CoreConstants.FILE_SIZE_UNIT * CoreConstants.FILE_SIZE_UNIT);

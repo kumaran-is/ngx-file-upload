@@ -10,8 +10,12 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-ngOnInit(): void {
+  ngOnInit(): void {
 
-}
+  }
+
+  onUpload(){
+    console.log('upload file>>>');
+  }
 
 }
