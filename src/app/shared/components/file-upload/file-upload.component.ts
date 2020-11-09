@@ -19,8 +19,13 @@ export class FileUploadComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public doFilePicked(event: FileList) {
+  public doFilePicked(event) {
+    const reader = new FileReader();
     this.fileToUpload = event && event.item(0);
+    reader.readAsDataURL(this.fileToUpload);
+    reader.onload = () => {
+      this.imageSrc = reader.result as string;
+    };
   }
 
   handleKeyDown(event) {

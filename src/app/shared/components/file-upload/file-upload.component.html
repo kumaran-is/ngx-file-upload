@@ -1,8 +1,7 @@
 <div class="file-upload-container">
   <div class="file-drop-area">
-
     <span class="file-msg" >{{fileToUpload ? fileToUpload.name : 'or drag and drop file here' }}</span>
-    <input type="file" class="file-input" >
+    <input type="file" class="file-input" (change)="doFilePicked($event.target.files)" >
   </div>
   <div class="file-preview">
     <img [src]="imageSrc" *ngIf="imageSrc" style="height: 300px; width:500px">
