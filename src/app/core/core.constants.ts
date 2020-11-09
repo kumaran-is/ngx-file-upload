@@ -5,4 +5,6 @@ export class CoreConstants {
     Accept: 'application/json'
   };
 
+  public static readonly FILE_SIZE_UNIT = 1024;
+
 }
