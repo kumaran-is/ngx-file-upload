@@ -1,16 +1,10 @@
 import { TestBed } from '@angular/core/testing';
 
-import { HttpApiService } from './http-api.service';
-
-describe('HttpApiService', () => {
-  let service: HttpApiService;
-
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(HttpApiService);
-  });
+describe('HttpAPIService', () => {
+  beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
+    const service: HttpAPIService = TestBed.get(HttpAPIService);
     expect(service).toBeTruthy();
   });
 });

@@ -3,6 +3,11 @@
     <app-file-upload></app-file-upload>
   </div>
   <div class="upload-btn-container">
-    <button mat-raised-button color="primary"  (click)="onUpload()" >Upload</button>
+    <button mat-raised-button color="primary"  (click)="onUpload('mytest.jpeg')" >Upload</button>
+  </div>
+
+  <div *ngIf="presigned$ | async as presigned">
+   <div>{{presigned.fileName}}</div>
+   <div>{{presigned.presignedUrl}}</div>
   </div>
 </div>
