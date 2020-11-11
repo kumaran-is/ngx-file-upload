@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef  } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output  } from '@angular/core';
 import { CoreConstants } from './../../../core/core.constants';
 
 @Component({
@@ -11,9 +11,9 @@ export class FileUploadComponent implements OnInit {
   public fileToUpload: File | null = null;
   public fileSize: string | number;
   public maxFileSize = 10;
-  public disabled = false;
   public imageSrc: string;
-  @ViewChild('fileInput', { static: false }) fileInput: ElementRef;
+  @Output() public filePicked = new EventEmitter<any>();
+
   constructor() { }
 
   ngOnInit(): void {
@@ -26,6 +26,10 @@ export class FileUploadComponent implements OnInit {
     reader.onload = () => {
       this.imageSrc = reader.result as string;
     };
+
+    this.filePicked.emit({
+      file:  this.fileToUpload
+    });
   }
 
 
