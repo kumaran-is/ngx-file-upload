@@ -29,9 +29,6 @@ export class FileUploadService {
   }
 
   public uploadFile(url: string, file: File, contentType: string): Observable<any> {
-    console.log('upload file service>>>', file);
-    console.log('url >>>', url);
-    console.log('contentType >>>', contentType);
     return this.http.put(
       url,
       file,

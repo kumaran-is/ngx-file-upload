@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   }
 
   public onUpload(): void{
-    console.log('upload file>>>', this.fileName);
+
     this.fileUploadService.getPresignedS3URL(this.fileName).pipe(
       mergeMap((presignedResponse: Presigned) => {
         return this.fileUploadService.uploadFile(
@@ -40,7 +40,6 @@ export class HomeComponent implements OnInit {
   }
 
   public onFilePicked(event: any): void {
-    console.log('event >>>', event);
     this.fileName = event.file.name;
     this.fileToUpload = event.file;
   }
