@@ -109,7 +109,7 @@ export class HttpAPIService {
     };
   }
 
-  private generateQueryString(params?: any): string {
+  private generateQueryString(params?: any): any {
     let queryString;
     if (params) {
       queryString = {

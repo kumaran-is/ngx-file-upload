@@ -1,6 +1,6 @@
 # File Upload
 
-File Upload is a web application built using [Angular v10.2.0](https://github.com/angular) to Upload files to AWS S3 bucket using S3 pre-signed URLs, AWS Lambda and AWS API Gateway
+File Upload is a web application built using [Angular v11.0.0](https://github.com/angular) to Upload files to AWS S3 bucket using S3 pre-signed URLs, AWS Lambda and AWS API Gateway
 
 This application is hosted on AWS S3 uses CloudFront, Certificate Manager and Route 53.
 
@@ -53,7 +53,7 @@ Library | Version | Notes
 :-------|:--------:|-------
 [Node](https://nodejs.org/) | 12.13.x | Recommended NodeJS version
 [NPM](https://nodejs.org/) | 6.12.x | Recommended NPM version
-[Angular](https://angularjs.org/) | 10.2.x. | JavaScript-based open-source front-end SPA framework
+[Angular](https://angularjs.org/) | 11.1.x. | JavaScript-based open-source front-end SPA framework
 [Angular Material](https://material.angular.io/) | 10.2.x. | JavaScript-based open-source front-end SPA framework
 [Python](https://www.python.org/)| ~3.9.x | programming language
 [awscli](https://aws.amazon.com/cli/)| ~2.x.x | AWS Command Line Interface
