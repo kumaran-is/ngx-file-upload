@@ -6,7 +6,7 @@ describe('RetryService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: RetryService = TestBed.get(RetryService);
+    const service: RetryService = TestBed.inject(RetryService);
     expect(service).toBeTruthy();
   });
 });

@@ -26,6 +26,7 @@ export class RetryService {
   }
 
   // Retry 3 times with increment delay of 1/2 second, 1 second and 1 1/2 seconds
+  // tslint:disable-next-line:typedef
   public retryWithIncrementalDelay({
     maxRetries = 3,
     retryDelayMilliSeconds = 500
