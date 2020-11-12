@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve -o",
+    "prod-start": "ng serve --prod -o",
     "build": "ng build",
+    "prod-build": "ng build --prod --base-href=./",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
