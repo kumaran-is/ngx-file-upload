@@ -19,7 +19,7 @@ export class FileUploadComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public doFilePicked(event) {
+  public doFilePicked(event): void {
     const reader = new FileReader();
     this.fileToUpload = event && event.item(0);
     reader.readAsDataURL(this.fileToUpload);
@@ -33,7 +33,7 @@ export class FileUploadComponent implements OnInit {
   }
 
 
-  private calcFilesize(bytes, roundTo = 2) {
+  private calcFilesize(bytes, roundTo = 2): any {
     const fileSize = bytes / (CoreConstants.FILE_SIZE_UNIT * CoreConstants.FILE_SIZE_UNIT);
    // this.isFileSizeError = fileSize > this.maxFileSize ? true : false;
 

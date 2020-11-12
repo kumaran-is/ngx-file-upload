@@ -99,17 +99,17 @@ export class HttpAPIService {
       .pipe(this.applyRetry(isRetry, isRetryType));
   }
 
-  private createCompleteURLPath(path: string) {
+  private createCompleteURLPath(path: string): string {
     return `${environment.APIUrl}/${path}`;
   }
 
-  private generateHeaders() {
+  private generateHeaders(): any {
     return {
       headers: new HttpHeaders(CoreConstants.HTTP_HEADERS)
     };
   }
 
-  private generateQueryString(params?: any) {
+  private generateQueryString(params?: any): string {
     let queryString;
     if (params) {
       queryString = {
@@ -124,7 +124,7 @@ export class HttpAPIService {
     return queryString;
   }
 
-  private applyRetry(isRetry?: boolean, isRetryType?: string) {
+  private applyRetry(isRetry?: boolean, isRetryType?: string): any{
     const operators = [];
     if (isRetry) {
       if (isRetryType === 'increment') {
