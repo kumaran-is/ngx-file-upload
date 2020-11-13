@@ -12,9 +12,10 @@ const path = require('path')
 
 const awsOpts = {
     region: process.env.region,
-    signatureVersion: 'v4',
-    accessKeyId: process.env.ACCESS_KEY,
-    secretAccessKey: process.env.SECRET_KEY,
+    signatureVersion: 'v4'
+   // No no need provided accesskey/secret, instead create a role for lambda function to have full access to S3
+//    accessKeyId: process.env.ACCESS_KEY,
+//    secretAccessKey: process.env.SECRET_KEY,
 };
 const s3Client = new AWS.S3(awsOpts);
 
